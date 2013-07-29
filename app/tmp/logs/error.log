@@ -1,0 +1,152 @@
+2013-07-27 11:30:57 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/mocxuatkhau/app/View/User/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/mocxuatkhau/app/View/User/index.ctp',
+)
+Request URL: /mocxuatkhau/users/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/mocxuatkhau/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-07-27 11:33:07 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /mocxuatkhau/users
+Stack Trace:
+#0 /Applications/MAMP/htdocs/mocxuatkhau/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-07-27 11:36:00 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/mocxuatkhau/app/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/mocxuatkhau/app/View/Users/index.ctp',
+)
+Request URL: /mocxuatkhau/user/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UserController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/mocxuatkhau/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-07-27 13:32:40 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /mocxuatkhau/user/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/mocxuatkhau/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-07-27 13:32:52 Error: [MissingViewException] View file "/Applications/MAMP/htdocs/mocxuatkhau/app/View/User/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/MAMP/htdocs/mocxuatkhau/app/View/User/index.ctp',
+)
+Request URL: /mocxuatkhau/users/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Controller/Controller.php(948): View->render(NULL, NULL)
+#2 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(194): Controller->render()
+#3 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Applications/MAMP/htdocs/mocxuatkhau/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-07-27 16:06:06 Error: [MissingTableException] Table a_a_as for model Node was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'a_a_as',
+  'class' => 'Node',
+  'ds' => 'default',
+)
+Request URL: /mocxuatkhau/nodes
+Stack Trace:
+#0 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Model.php(3243): Model->setSource('a_a_as')
+#1 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Model.php(2696): Model->getDataSource()
+#2 /Applications/MAMP/htdocs/mocxuatkhau/app/Controller/NodesController.php(10): Model->find('all')
+#3 [internal function]: NodesController->index()
+#4 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(NodesController), Array)
+#5 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#6 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NodesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Applications/MAMP/htdocs/mocxuatkhau/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2013-07-27 16:26:40 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Node.id' in 'where clause'
+Request URL: /mocxuatkhau/nodes/view/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Node`.`...', Array)
+#2 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Node`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Node`.`...', false)
+#4 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Model.php(2696): DboSource->read(Object(Node), Array)
+#5 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Model.php(1526): Model->find('first', Array)
+#6 /Applications/MAMP/htdocs/mocxuatkhau/app/Controller/NodesController.php(22): Model->read(NULL, '1')
+#7 [internal function]: NodesController->view('1')
+#8 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(NodesController), Array)
+#9 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NodesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/mocxuatkhau/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-07-27 16:27:39 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Node.id' in 'where clause'
+Request URL: /mocxuatkhau/nodes/view/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Node`.`...', Array)
+#2 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Node`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Node`.`...', false)
+#4 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Model.php(2696): DboSource->read(Object(Node), Array)
+#5 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Model.php(1526): Model->find('first', Array)
+#6 /Applications/MAMP/htdocs/mocxuatkhau/app/Controller/NodesController.php(22): Model->read(NULL, '1')
+#7 [internal function]: NodesController->view('1')
+#8 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(NodesController), Array)
+#9 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NodesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/mocxuatkhau/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-07-27 16:29:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Node.node_id' in 'field list'
+Request URL: /mocxuatkhau/nodes/view/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Node`.`...', Array)
+#2 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Node`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Node`.`...', false)
+#4 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Model.php(2696): DboSource->read(Object(Node), Array)
+#5 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Model.php(1526): Model->find('first', Array)
+#6 /Applications/MAMP/htdocs/mocxuatkhau/app/Controller/NodesController.php(23): Model->read('node_id', '1')
+#7 [internal function]: NodesController->view('1')
+#8 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(NodesController), Array)
+#9 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#10 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NodesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Applications/MAMP/htdocs/mocxuatkhau/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-07-27 16:33:26 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Node.node_id' in 'where clause'
+Request URL: /mocxuatkhau/nodes/view/1
+Stack Trace:
+#0 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Node`.`...', Array)
+#2 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Node`.`...', Array, Array)
+#3 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Datasource/DboSource.php(1077): DboSource->fetchAll('SELECT `Node`.`...', false)
+#4 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Model/Model.php(2696): DboSource->read(Object(Node), Array)
+#5 /Applications/MAMP/htdocs/mocxuatkhau/app/Controller/NodesController.php(24): Model->find('first', Array)
+#6 [internal function]: NodesController->view('1')
+#7 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Controller/Controller.php(486): ReflectionMethod->invokeArgs(Object(NodesController), Array)
+#8 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 /Applications/MAMP/htdocs/mocxuatkhau/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(NodesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/MAMP/htdocs/mocxuatkhau/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-07-28 00:59:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /mocxuatkhau/css/styles.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/mocxuatkhau/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-07-28 00:59:38 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /mocxuatkhau/css/styles.css
+Stack Trace:
+#0 /Applications/MAMP/htdocs/mocxuatkhau/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
